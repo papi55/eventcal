@@ -14,7 +14,7 @@ import java.util.Date;
  *
  * @author lstewart
  */
-public class EventTest extends TestCase {
+public class EventTest extends TestCase{
     private Event event;
     protected void setUp() throws Exception {
         event = new Event();
@@ -40,7 +40,7 @@ public class EventTest extends TestCase {
         try {
             Date today = df.parse("20/12/2005");
             assertNull(event.getFinalizedDate());
-            event.setFinalisedDate(df.format(today));
+            event.setFinalizedDate(today);
             assertEquals(df.format(today),event.getFinalizedDate());
         }
         catch(ParseException e){
