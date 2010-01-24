@@ -40,8 +40,8 @@ public class EventTest extends TestCase {
         try {
             Date today = df.parse("20/12/2005");
             assertNull(event.getFinalizedDate());
-            event.setFinalisedDate(df.format(today));
-            assertEquals(df.format(today),event.getFinalizedDate());
+            event.setFinalizedDate(today);
+            assertEquals(today,event.getFinalizedDate());
         }
         catch(ParseException e){
             e.printStackTrace();
