@@ -57,7 +57,8 @@ public class EventTest extends TestCase{
 
     public void testGetDateCreated(){
 
-            assertNull(event.getDateCreated());
+	    //This should have been set in the Event constructor
+            assertNotNull(event.getDateCreated());
 
     }
 

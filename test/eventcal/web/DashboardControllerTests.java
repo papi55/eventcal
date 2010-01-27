@@ -5,12 +5,12 @@
 
 package eventcal.web;
 import org.springframework.web.servlet.ModelAndView;
-import eventcal.web.HelloController;
+import eventcal.web.DashboardController;
 import junit.framework.TestCase;
 
-public class HelloControllerTests extends TestCase { 
+public class DashboardControllerTests extends TestCase {
     public void testHandleRequestView() throws Exception{
-        HelloController controller = new HelloController();
+        DashboardController controller = new DashboardController();
         ModelAndView modelAndView = controller.handleRequest(null, null);
         
         assertEquals("hello", modelAndView.getViewName());
