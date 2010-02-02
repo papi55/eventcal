@@ -18,6 +18,10 @@ public class Event implements Serializable {
 	private Date dateCreated;
 	private Date lastModified;
 
+	public Event() {
+		dateCreated = new Date();
+
+	}
 	/**
 	 * @return the description
 	 */

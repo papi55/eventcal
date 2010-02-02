@@ -12,7 +12,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
     
     
     <!-- the application context definition for the springapp DispatcherServlet -->
-  <bean name="/hello.htm" class="eventcal.web.HelloController"/>
+  <bean name="/hello.htm" class="eventcal.web.DashboardController"/>
 
 
     <!--
